@@ -86,6 +86,9 @@ h3{
     flex-direction: column;
     justify-content: center;
 }
+.contact-icon a{
+    margin: 0 auto;
+}
 .contact-icon h4{
     font-size: 5pt;
     font-family: 'RobotoCondensed';
