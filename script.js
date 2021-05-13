@@ -14,9 +14,9 @@
         let index = $('.products').index(this);
         $(".overlay").eq(index).fadeIn();
         $('.overlay-slide').flickity({
-            // options
             cellAlign: 'left',
-            contain: true
+            contain: true,
+            wrapAround: true
         });
     });
     // menu open close
