@@ -1,12 +1,138 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>YUKI TSUCHIDA</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" type="text/css" href="flickity/flickity.css" />
 </head>
+
 <body>
-    
+    <div class="loading">
+        <div class="loading-text name">YUKI TSUCHIDA</div>
+    </div>
+    <div class="wrap">
+        <div id="navArea">
+
+            <nav>
+                <div class="inner">
+                    <ul>
+                        <li><a href="#works">-Works-</a></li>
+                        <li><a href="#about">-About-</a></li>
+                        <li><a href="#contact">-Contact-</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="toggle_btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div id="mask"></div>
+
+        </div>
+        <div class="left">
+            <span class="name">
+                YUKI TSUCHIDA
+            </span>
+        </div>
+        <div class="right">
+            <div class="works" id="works">
+                <h3>-Works-</h3>
+                <div class="products">
+                    <img src="./image/placeholder.png" alt="">
+                </div>
+                <div class="products">
+                    <img src="./image/placeholder.png" alt="">
+                </div>
+                <div class="products">
+                    <img src="./image/placeholder.png" alt="">
+                </div>
+                <div class="products">
+                    <img src="./image/placeholder.png" alt="">
+                </div>
+            </div>
+            <div class="about" id="about">
+                <h3>-About-</h3>
+                <div class="profile">
+                    <div class="profile-image">
+                        <img src="./image/profile-holder.png" alt="">
+                    </div>
+                    <div class="profile-text">
+                        <p>
+                            hogehogehogehogehogehoge<br>
+                            hogehogehogehogehogehoge<br>
+                            hogehogehogehogehogehoge<br>
+                            hogehogehogehogehogehoge<br>
+                            hogehogehogehogheohogehoge
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact" id="contact">
+                <h3>-Contact-</h3>
+                <div class="contact-list">
+                    <div class="contact-icon">
+                        <img src="./image/mail.png" alt="">
+                        <h4>contact@tsucchy.me</h4>
+                    </div>
+                    <div class="contact-icon">
+                        <img src="./image/twitter.png" alt="">
+                        <h4>@gagagahaku</h4>
+                    </div>
+                    <div class="contact-icon">
+                        <img src="./image/instagram.png" alt="">
+                        <h4>d_gahaku</h4>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 一つ目のoverlay始まり -->
+    <div class="overlay">
+        <div class="overlay-header">
+            <span class="overlay-name">
+                YUKI TSUCHIDA
+            </span>
+        </div>
+        <div class="overlay-main">
+            <div class="overlay-slide">
+                <div><img src="./image/placeholder.png" class="overlay-image" alt=""></div>
+                <div><img src="./image/placeholder.png" class="overlay-image" alt=""></div>
+                <div><img src="./image/placeholder.png" class="overlay-image" alt=""></div>
+            </div>
+            <div class="overlay-title">
+                <span class="overlay-title-text">サイト名(リンク)</span>
+            </div>
+            <div class="overlay-description">
+                <div class="overlay-description-left">
+                    <p>サイトの内容。サイトの内容。サイトの内容。サイトの内容。サイトの内容。サイトの内容。サイトの内容。サイトの内容。サイトの内容。サイトの内容。サイトの内容。サイトの内容。サイトの内容。サイトの内容。サイトの内容。サイトの内容。サイトの内容。サイトの内容。サイトの内容。サイトの内容。サイトの内容。サイトの内容。サイトの内容。サイトの内容。サイトの内容。サイトの内容。サイトの内容。サイトの内容。サイトの内容。サイトの内容。サイトの内容。サイトの内容。サイトの内容。サイトの内容。サイトの内容。サイトの内容。サイトの内容。サイトの内容。サイトの内容。サイトの内容。サイトの内容。サイトの内容。サイトの内容。サイトの内容。
+                    </p>
+                </div>
+                <div class="overlay-description-right">
+                    <p>
+                        Web Director<br>
+                        HTML/CSS<br>
+                        Duration:
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="overlay-back">
+            <span class="overlay-back-text">ホームへ戻る</span>
+        </div>
+    </div>
+    <!-- 一つ目のoverlay終わり -->
 </body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="flickity/flickity.pkgd.min.js"></script>
+<script src="./script.js"></script>
+
 </html>

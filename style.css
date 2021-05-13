@@ -1,0 +1,452 @@
+@font-face {
+	font-family: 'RobotoCondensed';
+	src: url(./font/RobotoCondensed-LightItalic.ttf);
+}
+body{
+    margin: 0px;
+    width: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", HelveticaNeue, YuGothic, "Yu Gothic Medium", "Yu Gothic", Verdana, Meiryo, sans-serif;
+    color: #1F1F1F;
+    scroll-behavior: smooth;
+}
+.wrap{
+    display: flex;
+    flex-direction: row;
+}
+h3{
+    font-size: 20pt;
+    text-align: center;
+    font-family: 'RobotoCondensed';
+}
+
+.left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48vw;
+    height: 100vh;
+}
+.name{
+    position: fixed;
+    font-size: 35pt;
+    font-family: 'RobotoCondensed';
+}
+.right{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 48vw;
+}
+.works{
+    width: 100%;
+}
+.products{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.products img{
+    width: 80%;
+    height: 80%;
+    cursor: pointer;
+}
+.about{
+    width: 100%;
+    margin-top: 60px;
+}
+.profile{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    flex-direction: row;
+}
+.profile-text p{
+    font-size: 12.5px;
+}
+.profile-image{
+    width: 40%;
+}
+.profile-image img{
+    width: 80%;
+}
+
+.contact{
+    width: 100%;
+    margin-top: 60px;
+}
+.contact-list{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin: 0 auto;
+}
+.contact-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contact-icon h4{
+    font-size: 5pt;
+    font-family: 'RobotoCondensed';
+    text-align: center;
+}
+.contact-icon img{
+    margin: 0 auto;
+    width: 60px;
+    cursor: pointer;
+}
+
+
+/*============
+overlay
+=============*/
+.overlay{
+    display: none;
+    flex-direction: column;
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      overflow: scroll;
+      top: 0;
+      left: 0;
+      z-index: 100;
+      background: #fff
+}
+.overlay-header{
+    width: 96vw;
+    margin: 20px;
+}
+.overlay-name{
+    font-size: 35pt;
+    font-family: 'RobotoCondensed';
+}
+.overlay-main{
+    margin: 0 auto;
+    width: 60%;
+}
+.overlay-image{
+    width: 100%;
+    height: auto;
+}
+.overlay-title{
+    width: 96vw;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.overlay-title-text{
+    font-size: 33pt;
+    font-weight: bold;
+    letter-spacing: 20px;
+}
+.overlay-description{
+    display: flex;
+    flex-direction: row;
+}
+.overlay-description-left{
+    width: 45%;
+}
+.overlay-description-right{
+    margin-left: 10%;
+    width: 45%;
+}
+.overlay-description p{
+        width: 100%;
+    font-size: 15px;
+    font-weight: bold;
+}
+.overlay-back{
+    position:fixed;
+    right:80px;
+    bottom:50px;
+}
+.overlay-back-text{
+	display: inline-block;
+	position: relative;
+	color: #555;
+ 	text-decoration: none;
+     cursor: pointer;
+}
+.overlay-back-text:before{
+	content: "";
+	position: absolute;
+	 left: 0;
+	bottom: -4px;
+	width: 100%;
+	height: 3px;
+	background: #555;
+	transform: scale(0, 1);
+	transform-origin: left;
+	transition: 0.4s;
+}
+.overlay-back-text:hover:before {
+	transform: scale(1);
+}
+
+
+
+/*============
+nav
+=============*/
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    right: -48vw;
+    bottom: 0;
+    width: 48vw;
+    background: #1F1F1F;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    transition: all .5s;
+    z-index: 2;
+    opacity: 0;
+  }
+  .open nav {
+    right: 0;
+    opacity: 1;
+  }
+  nav .inner {
+    padding: 25px;
+  }
+  nav .inner ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  nav .inner ul li a {
+    display: block;
+    color: #fff;
+    font-size: 20pt;
+    font-family: 'RobotoCondensed';
+    padding: 1em;
+    text-decoration: none;
+    transition-duration: 0.2s;
+    margin: 50px auto;
+  }
+   /*============
+  loading
+  =============*/
+  .loading{
+    width: 100vw;
+  height: 100vh;
+  transition: all 1s;
+  background-color: #fff;
+    position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  .animation{
+      animation: anim 1s forwards;
+  }
+  @keyframes anim {
+  0% {
+  transform: translateX(0px);
+  }
+
+  100% {
+  transform: translateX(-26vw);
+  }
+}
+  /*============
+  .toggle_btn
+  =============*/
+  .toggle_btn {
+    display: block;
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    width: 30px;
+    height: 30px;
+    transition: all .5s;
+    cursor: pointer;
+    z-index: 3;
+  }
+  .toggle_btn span {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background-color: #333;
+    border-radius: 4px;
+    transition: all .5s;
+  }
+  .toggle_btn span:nth-child(1) {
+    top: 4px;
+  }
+  .toggle_btn span:nth-child(2) {
+    top: 14px;
+  }
+  .toggle_btn span:nth-child(3) {
+    bottom: 4px;
+  }
+  .open .toggle_btn span{
+    background-color: #fff;
+  }
+  .open .toggle_btn span:nth-child(1) {
+    -webkit-transform: translateY(10px) rotate(-315deg);
+    transform: translateY(10px) rotate(-315deg);
+  }
+  .open .toggle_btn span:nth-child(2) {
+    opacity: 0;
+  }
+  .open .toggle_btn span:nth-child(3) {
+    -webkit-transform: translateY(-10px) rotate(315deg);
+    transform: translateY(-10px) rotate(315deg);
+  }
+
+  /*============
+tablet
+=============*/
+@media screen and ( max-width:1024px) {
+.name {
+    font-size: 25pt;
+}
+h3{
+    font-size: 15pt;
+}
+.profile {
+    width: 100%;
+}
+.profile-image {
+    width: 40%;
+    min-width: 120px;
+}
+.profile-text p {
+    font-size: 10px;
+}
+.contact-list{
+        width: 80%;
+}
+.contact-icon img {
+    width: 40px;
+}
+.contact-icon h4 {
+    font-size: 3pt;
+}
+.overlay-title-text{
+    font-size: 14px;
+    letter-spacing: 5px;
+}
+.toggle_btn {
+    width: 20px;
+    right: 20px;
+}
+.toggle_btn span{
+    width: 20px;
+}
+.overlay-main {
+    margin: 0 auto;
+    width: 80%;
+}
+.overlay-title-text{
+    font-size: 25px;
+    letter-spacing: 5px;
+}
+}
+  /*============
+sp
+=============*/
+@media screen and (max-width:649px){
+.wrap{
+    flex-direction: column;
+}
+.left{
+    width: 96vw;
+    margin-top: 30px;
+    margin-left: 10px;
+    height: auto;
+    justify-content: left;
+}
+ .animation{
+      animation: anim 1s forwards;
+  }
+  @keyframes anim {
+  0% {
+  opacity: 1;
+  }
+
+  100% {
+        opacity: 0;
+
+  }
+}
+.name {
+    position: relative;
+    font-size: 20pt;
+    letter-spacing: 7px;
+}
+.right{
+    width: 96vw;
+    margin: 50px auto;
+}
+h3{
+    font-size: 15pt;
+}
+.profile {
+    width: 100%;
+}
+.profile-image {
+    width: 40%;
+    min-width: 120px;
+}
+.profile-text p {
+    font-size: 10px;
+}
+.contact-list{
+        width: 80%;
+}
+.contact-icon img {
+    width: 40px;
+}
+.contact-icon h4 {
+    font-size: 3pt;
+}
+.toggle_btn {
+    width: 20px;
+    right: 20px;
+}
+.toggle_btn span{
+    width: 20px;
+}
+nav .inner ul li a {
+    font-size: 10pt;
+}
+
+.toggle_btn {
+    right: 15px;
+}
+.overlay-name{
+    font-size: 25pt;
+    font-family: 'RobotoCondensed';
+}
+.overlay-title-text{
+    font-size: 14px;
+    letter-spacing: 5px;
+}
+.overlay-description{
+    flex-direction: column;
+}
+.overlay-description-left{
+    width: 96%;
+}
+.overlay-description-right{
+    margin-left: 0;
+    width: 96%;
+}
+.overlay-description p {
+    font-size: 8px;
+    font-weight: bold;
+}
+.overlay-back-text{
+    font-size: 9pt;
+}
+}
