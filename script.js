@@ -24,15 +24,20 @@
 $(window).on('load', function () { //全ての読み込みが完了したら実行
     const webStorage = function () {
         const $loading = $('.loading');
+        const ua = navigator.userAgent;
 
         if (sessionStorage.getItem('access')) {
             $('.loading').css('display', 'none')
             $('.wrap').css('display', 'flex');
         } else {
-            $('.loading').delay(2500).fadeOut(800);
-            $('.loading-text').delay(1500).queue(function () {
-                $(this).addClass("animation");
-            });
+            if (ua.indexOf('iPhone') > -1 || (ua.indexOf('Android') > -1 && ua.indexOf('Mobile') > -1)) {
+                $('.loading').delay(1500).fadeOut(800);
+            } else {
+                $('.loading').delay(2500).fadeOut(800);
+                $('.loading-text').delay(1500).queue(function () {
+                    $(this).addClass("animation");
+                });
+            }
             $('.wrap').css('display', 'flex');
             sessionStorage.setItem('access', 0);
         }
