@@ -3,7 +3,7 @@ name: CI
 # トリガーの設定
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
 
 jobs:
 
