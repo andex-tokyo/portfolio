@@ -102,6 +102,9 @@ h3 {
     font-size: 16px;
     margin-top: 0;
 }
+.profile-text span {
+    font-size: 12px;
+}
 
 .profile-image {
     width: 40%;
@@ -415,10 +418,13 @@ tablet
     }
     .profile-name{
     font-size: 10px;
-}
+    }
 
     .profile-text p {
         font-size: 10px;
+    }
+    .profile-text span {
+    font-size: 8px;
     }
 
     .contact-list {
@@ -454,10 +460,10 @@ tablet
     .works-slide {
     width: 80vw;
     height: auto;
-}
-.works-image{
+    }
+    .works-image{
     width: 80vw;
-}
+    }
 
     .works-title-text {
         font-size: 25px;
@@ -605,9 +611,13 @@ sp
     .profile-text p {
         font-size: 10px;
         text-align: center;
-        margin-top: 50px;
+        margin-top: 30px;
         
     }
+    .profile-text span {
+    font-size: 8px;
+    }
+}
 
     .contact-list {
         width: 80%;
