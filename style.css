@@ -617,7 +617,6 @@ sp
     .profile-text span {
     font-size: 8px;
     }
-}
 
     .contact-list {
         width: 80%;
@@ -684,4 +683,16 @@ sp
     .works-back-text {
         font-size: 9pt;
     }
+}
+/*============
+small sp
+=============*/
+@media screen and (max-width:360px) {
+    .profile-image {
+    width: 80%;
+    }
+    .profile-text{
+        width: 80%;
+    }
+
 }
