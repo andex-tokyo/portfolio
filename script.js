@@ -54,9 +54,5 @@ $(window).on('load', function () { //全ての読み込みが完了したら実�
 });
 function nameClick() {
     sessionStorage.removeItem('access');
-    window.location.href = './index.html';
-}
-function nameWorksClick() {
-    sessionStorage.removeItem('access');
-    window.location.href = '../index.html';
+    window.location.href = 'https://tsucchy.me/';
 }
