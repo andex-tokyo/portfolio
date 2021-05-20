@@ -1,6 +1,7 @@
 @font-face {
     font-family: 'RobotoCondensed';
     src: url(./font/RobotoCondensed-LightItalic.ttf);
+    font-display: block;
 }
 html { scroll-behavior: smooth;}
 
