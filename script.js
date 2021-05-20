@@ -6,6 +6,7 @@
     let h = $(window).height();
 
     $('.wrap').css('display', 'none');
+    $('.works-wrap').css('display', 'none');
     $('.loader-bg ,.loader').height(h).css('display', 'flex');
     // menu open close
     $btn.on('click', function () {
@@ -28,7 +29,6 @@ $(window).on('load', function () { //全ての読み込みが完了したら実�
 
         if (sessionStorage.getItem('access')) {
             $('.loading').css('display', 'none')
-            $('.wrap').css('display', 'flex');
         } else {
             if (ua.indexOf('iPhone') > -1 || (ua.indexOf('Android') > -1 && ua.indexOf('Mobile') > -1)) {
                 $('.loading').delay(1500).fadeOut(800);
@@ -38,12 +38,13 @@ $(window).on('load', function () { //全ての読み込みが完了したら実�
                     $(this).addClass("animation");
                 });
             }
-            $('.wrap').css('display', 'flex');
             sessionStorage.setItem('access', 0);
         }
     }
 
     webStorage();
+    $('.wrap').css('display', 'flex');
+    $('.works-wrap').css('display', 'block');
     $('.works-slide').flickity({
         cellAlign: 'left',
         contain: true,
