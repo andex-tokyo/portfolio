@@ -61,6 +61,9 @@ h3 {
     margin-top: 10%;
     /*    margin-topを10%に*/
 }
+.works-wrap {
+   display: none;
+}
 .works-name a{
     color: #1F1F1F;
     text-decoration: none;

@@ -6,7 +6,6 @@
     let h = $(window).height();
 
     $('.wrap').css('display', 'none');
-    $('.works-wrap').css('display', 'none');
     $('.loader-bg ,.loader').height(h).css('display', 'flex');
     // menu open close
     $btn.on('click', function () {
