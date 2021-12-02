@@ -332,10 +332,8 @@ nav .inner ul li a {
     }
 
     100% {
-        transform: translateX(-32.5vw);
+        transform: translateX(-30vw);
     }
-
-    /*    transformをtranslateX(-32.5vw)に */
 }
 
 /*============
